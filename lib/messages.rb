@@ -15,10 +15,9 @@ module Messages
         body: {
           "sender" => msg_sender,
           "recipient_id" => msg_recipient_id,
-          "token" => message_thread,
           "subject" => msg_subject,
           "stripped-text" => msg_text
         },
         headers: {"authorization" => @auth_token} )
-    end
+      end
   end
